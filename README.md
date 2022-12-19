@@ -1,6 +1,7 @@
-#Hello
+# Hello
+## Welcome to my 'Random Sports Advice' application
 
-This 'Random Sports Advice' application was a portfolio project (called 'Mixed Messages') on Codecademy's Full Stack Engineer Career Path. I created this in December 2022. The instructions were to create a program that, when ran, would generate a random string of text. That was pretty much the only requirement. The rest was left up to me.
+This was a portfolio project (called 'Mixed Messages') on Codecademy's Full Stack Engineer Career Path. I created this in December 2022. The instructions were to create a program that, when ran, would generate a random string of text. That was pretty much the only requirement. The rest was left up to me.
 
 After a little thought, I decided to make program that would behave like a stranger at a sports bar who would give you random thoughts on sports. One of the objectives was to add many variables to it. So I programmed this stranger to give one of five types of responses.
 
