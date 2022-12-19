@@ -167,7 +167,8 @@ const chalkPick = (team) => {
     console.log(`If you ask me, nobody can beat the ${team} this year!`);
 }
 
-const randomSportsAdvice = () => {
+const randomSportsAdvice = (sport) => {
+    if (sport === 'NFL' || sport === 'nfl') {
     let advNum = Math.floor(Math.random() * 4);
     if (advNum === 0) {
         goingToBet(goodnflTeam(),betAmount());
@@ -180,6 +181,53 @@ const randomSportsAdvice = () => {
     } else {
         console.log('I don\'t know, man. You probably don\'t want my advice.');
     }
+    } else if (sport === 'NBA' || sport === 'nba') {
+        let advNum = Math.floor(Math.random() * 4);
+        if (advNum === 0) {
+            goingToBet(goodnbaTeam(),betAmount());
+        } else if (advNum === 1) {
+            optimisticFan(underdognbaTeam(),goFar());
+        } else if (advNum === 2) {
+            overratedTeam(goodnbaTeam(),loseEarly());
+        } else if (advNum === 3) {
+            chalkPick(goodnbaTeam());
+        } else {
+            console.log('I don\'t know, man. You probably don\'t want my advice.');
+        }
+    
+    } else if (sport === 'MLB' || sport === 'mlb') {
+        let advNum = Math.floor(Math.random() * 4);
+        if (advNum === 0) {
+            goingToBet(goodmlbTeam(),betAmount());
+        } else if (advNum === 1) {
+            optimisticFan(underdogmlbTeam(),goFar());
+        } else if (advNum === 2) {
+            overratedTeam(goodmlbTeam(),loseEarly());
+        } else if (advNum === 3) {
+            chalkPick(goodmlbTeam());
+        } else {
+            console.log('I don\'t know, man. You probably don\'t want my advice.');
+        }
+    } else if (sport === 'NHL' || sport === 'nhl') {
+        let advNum = Math.floor(Math.random() * 4);
+        if (advNum === 0) {
+            goingToBet(goodnhlTeam(),betAmount());
+        } else if (advNum === 1) {
+            optimisticFan(underdognhlTeam(),goFar());
+        } else if (advNum === 2) {
+            overratedTeam(goodnhlTeam(),loseEarly());
+        } else if (advNum === 3) {
+            chalkPick(goodnhlTeam());
+        } else {
+            console.log('I don\'t know, man. You probably don\'t want my advice.');
+        }
+    } else {
+        console.log('Yeah, I don\'t really watch that sport.')
+        }
 }
 
-randomSportsAdvice();
+randomSportsAdvice('NFL');
+randomSportsAdvice('nba');
+randomSportsAdvice('MLB');
+randomSportsAdvice('nhl');
+randomSportsAdvice('MLS');
